@@ -18,6 +18,11 @@ async function find_all_ql_db() {
   return result;
 }
 
+async function insert_codeql_imports(data){
+  const insertResult = await codeql_imports_collection.insertOne(data);
+  return insertResult;
+}
+
 
 export{
   connect_db,
