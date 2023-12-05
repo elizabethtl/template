@@ -5,5 +5,5 @@ import { http_eval_logger } from "../logger.js";
 console.log('pause http eval workers');
 
 await http_eval_queue.pause();
-await http_eval_worker.pause();
+
 http_eval_logger.warn(`\n----- pausing worker -----\n`);
