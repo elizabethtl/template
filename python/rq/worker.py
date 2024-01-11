@@ -6,3 +6,5 @@ q = Queue('calc_queue', connection=redis_conn)
 
 w = Worker([q], connection=redis_conn)
 w.work()
+
+# need separate scripts for separate workers
