@@ -1,3 +1,175 @@
+---
+
+marp: true
+theme: default
+paginate: true
+
+---
+
+<style>
+section {
+  text-align: left;
+  background-color: #ededed;
+}
+h1, h4 {
+  text-align: right;
+}
+h2 {
+  color: #0270bf;
+  position: absolute;
+  top: 8%;
+}
+h3 {
+  color: #02717d;
+  position: absolute;
+  top: 12%;
+}
+img{
+  display: block;
+  margin-left:30%;
+}
+</style>
+
+
+# Securing Public Safety Communications on Commercial and Tactical 5G Networks
+
+#### 資科四 林子恩
+
+---
+
+public safety actors (law enforcement, border control, etc.) have traditionlly used closed networks with high-security and narrow-bandwidth properties
+
+costs of maintaining a dedicated communication infrastructrue are high
+
+potential advantages of emerging applications
+
+&rarr; necessitate upgrading the network
+
+---
+
+<style scoped>
+  p, ul{
+    position: relative;
+    top: 10%;
+  }
+  img{
+    display: block;
+    margin-left:30%;
+  }
+</style>
+
+## next generation of public safety networks 
+
+expected to be based on 3GPP (protocols for mobile telecommunications)
+
+follow hybrid architecture 
+* commercial mobile operator network infrastructure
+* rapidly deployable tactical network bubbles
+  * extra capacity in remote locations
+  * availability where commercial network is distrupted
+
+![width:500px](./screenshots/infrastructure.png)
+
+---
+
+## next generation of public safety networks 
+
+hybrid infrastructure promises cost effective means to achieve communication with good quality
+
+but, sharing infrastructure between civilian and public safety users introduces new challenges
+* availability
+* trustworthiness
+* security
+
+threat landscape larger than closed networks
+
+---
+
+## complement existing research by providing
+
+an analysis of public safety communication related security requirements and characteristics
+
+insights and observations on challenges arising from 
+* utilization of 5G communication standards and civilian infrastructure
+* emergence of IoT equipment
+* tactical communications in remote locations with potentially limited or disconnected backhaul
+* distributed mission-critical application architectures
+
+---
+
+## public safety network evolution and use cases
+
+* characteristics of technologies
+* highlight typical use cases and requirements involved
+  
+---
+<style scoped>
+  p, ul{
+    position: relative;
+    top: 10%;
+  }
+</style>
+
+## public safety network evolution and use cases
+
+### authorities in commercial operators' access networks
+
+public safety users typically require priority over other users
+
+&rarr; operators may provide service levels with diverse availability guarantees and QoS properties
+
+provides dynamically request availability guarantees for traffic flows through policy control functions
+
+based on agreements between operators and public safety organizations
+* contractual agreements
+* service level agreements
+
+---
+
+<style scoped>
+  p, ul{
+    position: relative;
+    top: 12%;
+  }
+</style>
+
+## public safety network evolution and use cases
+
+### tactical bubbles
+
+movable, stand-alone, rapidly deployable networks that provide connectivity to network
+
+minimal configuration time and efforts, automation and self-configuration are essential
+
+may increase security when securely isolated from commercial infrastructure
+
+![width:500px](./screenshots/Topology-of-the-tactical-bubble-system-with-three-interconnected-bubbles.png)
+
+---
+
+## public safety network evolution and use cases
+
+### tactical bubbles
+
+three main modes
+
+1. **tactical access bubble** - has own access network functions, core network and application services are external (from cloud or other bubble)
+2. **regular bubble** - own access and core functions, application services from cloud or other bubble
+3. **isolated bubble** - works independently with its own access, core, application functions
+
+---
+
+## public safety network evolution and use cases
+
+### use cases and assets - video surveillance within tactical bubble
+
+capable of transmitting large data streams within isolated tactical network
+
+requires broadband access and core, video servers, local edge acceleration (optional)
+
+---
+
+## public safety network evolution and use cases
 
 ### use cases and assets - mission-critical services in the cloud
 
